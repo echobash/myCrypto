@@ -1,0 +1,8 @@
+import base64
+f=open('2048','r')
+data=f.read()
+flagFormat="LCSC"
+for i in range(100):
+        if flagFormat not in data:
+                data=base64.b64decode(data)
+print(data)
